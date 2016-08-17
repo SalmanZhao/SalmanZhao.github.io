@@ -77,13 +77,10 @@ function startMove(obj,json,fn){
             : Math.floor(parseInt(target)*obj.offsetWidth/100)+'px';
         }
         obj.timer = setInterval(function(){
-            // console.log(getStyle(obj,attr))
             if(getStyle(obj,attr).match(/%/)){
-                console.log(11)
                 dir = (parseInt(target)-parseInt(getStyle(obj,attr))*obj.offsetWidth/100)/12;
             }
             else{
-                // console.log(22)
                 dir = (parseInt(target)-parseInt(getStyle(obj,attr)))/12;
             }
             // if(Math.abs(dir)>30)dir = dir>0?30:-30;
@@ -91,7 +88,6 @@ function startMove(obj,json,fn){
             obj.style[attr] = (getStyle(obj,attr).match(/%/) ? parseInt(getStyle(obj,attr))*obj.offsetWidth/100 : parseInt(getStyle(obj,attr)))+step+'px';
             if(target == '0') target = '0px';
             if(getStyle(obj,attr) == target){
-                console.log(33)
                 clearInterval(obj.timer);
                 if(json[attr].match(/%/)){
                     obj.style[attr] = json[attr];
