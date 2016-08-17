@@ -119,7 +119,7 @@ window.onload=function(){
 
 
     // 调整图片位置
-    function bannerImgaPosition(){
+    function bannerImgPosition(){
         // 获取可视区尺寸
         var winSize = {};
         var e = window, 
@@ -143,8 +143,8 @@ window.onload=function(){
             })
         }
     }
-    bannerImgaPosition();
-    window.onresize = bannerImgaPosition;
+    bannerImgPosition();
+    window.onresize = bannerImgPosition;
 
     //自动轮播
     var play = function(){
