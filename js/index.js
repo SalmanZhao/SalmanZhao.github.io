@@ -353,12 +353,14 @@ window.onload=function(){
         scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         if(scrollTop < 316){
             var t = scrollTop;
+            lift.timer&&clearTimeout(lift.timer);
             lift.timer = setTimeout(function(){
                 lift.style.top = 516-t + 'px';
                 removeClassOfAll(liftItems,'mix_active');
                 addClass(getByClass(lift,'lift-vacations')[0],'mix_active')
             },200)
         }else{
+            lift.timer&&clearTimeout(lift.timer);
             lift.style.top ='200px';
             if(scrollTop<674){removeClassOfAll(liftItems,'mix_active');addClass(getByClass(lift,'lift-vacations')[0],'mix_active')}
             else if(scrollTop<1139){removeClassOfAll(liftItems,'mix_active');addClass(getByClass(lift,'lift-hotels')[0],'mix_active')}
