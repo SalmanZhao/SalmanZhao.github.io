@@ -29,18 +29,21 @@ table {
     border-collapse: collapse;
 }
 body {
-    font: 12px/1.5 arial, Simsun, sans-serif;
+    font: 12px/1.5 "Microsoft yahei",arial, Simsun, sans-serif;
     color: #333;
     background-color: #fff;
 }
 b {display:inline-block;}
-.header, .nav, .nav2, .dot_wrap {
-    width: 980px;
-    margin: 0 auto;
+@media screen and (max-width: 1200px){
+    .header, .nav, .nav2, .dot_wrap {
+        width: 980px;
+        margin: 0 auto;
+    }
 }
+
 .header {
     margin: 0 auto;
-    width: 980px;
+    width: 1180px;
     height: 65px;
 }
 em {
@@ -49,6 +52,9 @@ em {
 }
 .fl {float: left;}
 .fr {float: right;}
+.modo.copyright {
+    width: 1180px; 
+}
 .logo a {
     display: block;
     height: 43px;
@@ -324,7 +330,7 @@ em {
 }
 
 .top-bg {
-    width: 980px;
+    width: 1180px;
     margin: -65px auto 0;
 }
 .top-bg div {
@@ -333,6 +339,10 @@ em {
     background: url(../img/pic_doodle_march.jpg) 15px 0 no-repeat;
 }
 /*导航栏*/
+.nav {
+    width: 1180px;
+    margin: 0 auto;
+}
 .nav_bar {
     height: 40px;
     background-color: #2577e3;
@@ -350,7 +360,7 @@ em {
     font-size: 15px;
     color: #fff;
     border-left: 1px solid #1D67DD;
-    padding: 0 6px 0 4px;
+    padding: 0 6px 0 6px;
 }
 
 .label-cn em, .label-en em {
@@ -417,7 +427,7 @@ em {
 }
 .nav_li:first-child {
     background-color: #0a56bb;
-    width: 40px;
+    width: 42px;
 }
 .nav_li:first-child a {
     border: none;
@@ -449,12 +459,12 @@ em {
 .user {
     width: 156px;
     background-color: #FF9913;
-    float: right;
+    position: absolute;
+    right: 0;
     line-height: 18px;
     font-size: 12px;
     text-align: left;
     padding:2px 1px 2px 3px;
-    position: relative;
     height: 36px;
 }
 .user b, .user em {
@@ -543,6 +553,8 @@ em {
     clear: both;
 }
 .nav2 {
+    width: 1180px;
+    margin: 0 auto;
     overflow: hidden;
     height: 22px;
     background-color: #fff;
@@ -690,7 +702,7 @@ em {
     position: relative;
     display: none;
     margin: 0 auto;
-    margin-left: -370px;
+    /* margin-left: -370px; */
     z-index: 0;
 }
 .slide_parent {
@@ -741,7 +753,7 @@ em {
 }
 /*搜索*/
 .mod_wrap {
-    width: 980px;
+    width: 1180px;
     margin: 0 auto;
 }
 .mod {
@@ -972,7 +984,7 @@ input {
 .main {
     padding-top: 36px;
     background: #f6f6f6;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .main p, .main span{
     color: #666;
@@ -1034,7 +1046,7 @@ input {
     color: #06C;
 }
 .top {
-    padding-left: 11px;
+    /* padding-left: 11px; */
 }
 .clearfix:after {
     content: "";
@@ -1043,7 +1055,7 @@ input {
     clear: both;
 }
 .section {
-    width: 980px;
+    width: 1180px;
     margin: 0 auto 35px;
 }
 .page-wrap {
@@ -1091,7 +1103,7 @@ input {
     height: 360px;
 }
 .page.right {
-    margin-left: 239px;
+    margin-left: 229px;
 }
 .link i {
     width: 6px;
@@ -1111,13 +1123,13 @@ input {
     float: left;
     width: 220px;
     white-space: nowrap;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .sale .product-item {
-    margin: 0 20px 10px 0;
+    margin: 0 10px 10px 0;
 }
  .hotel .product-item {
-    margin: 0 20px 20px 0;
+    margin: 0 10px 10px 0;
  }
 .item-thumbnail {
     width: 220px;
@@ -1253,7 +1265,13 @@ input {
     background: rgba(0, 0, 0, 0.6);
 
 }
-.hotel-abroad .item-thumbnail, .guide .item-thumbnail {
+/* .hotel-abroad .item-thumbnail, .guide .item-thumbnail {
+    height: 155px;
+} */
+.hotel-abroad .item-thumbnail {
+    height: 160px;
+}
+.guide .item-thumbnail {
     height: 155px;
 }
 .item-msg .item-num {
@@ -1461,12 +1479,12 @@ input {
 .for-service .page-wrap {
     background-color: #f6f6f6;
     border-color: #3983e5 transparent transparent;
-    width: 980px;
+    width: 1180px;
     margin-left: -1px;
 }
 .for-service .page {
     margin-left: 10px;
-    width: 318px;
+    width: 384px;
     background-color: #fff;
     margin-top: 10px;
     border: 1px solid #e0e0e0;
@@ -1474,7 +1492,7 @@ input {
     float: left;
 }
 .col-3 .supply-item {
-    width: 159px;
+    width: 128px;
 }
 .for-service .inner-wrap {
     margin-left: -10px;
@@ -1509,7 +1527,7 @@ input {
 }
 
 .supply-img {
-    width: 85px;
+    width:110px;
     float: left;
     text-align: right;
 }
@@ -1557,7 +1575,7 @@ input {
     background: #cbe2b3;
 }
 .supply-cont {
-    margin-left: 95px;
+    margin-left: 130px;
     padding-top: 15px;
     line-height: 1.5;
 }
@@ -1586,7 +1604,7 @@ input {
     padding: 8px 0;
 }
 .col-4 .supply-item {
-    width: 106px;
+    width: 96px;
 }
 .supply-item {
     display: inline-block;
@@ -1666,7 +1684,7 @@ input {
     float: left;
 }
 .partner .part-bd li {
-    width: 120px;
+    width: 154px;
     float: left;
     display: inline-block;
     border-left: 1px dashed #e0e0e0;
@@ -1767,6 +1785,7 @@ article {
 /*footer*/
 
 .modo.footer {
+    width: 1180px;
     color: #666;
     margin: 28px auto 0;
 }
@@ -1835,7 +1854,7 @@ article {
 .modo.footer .footer-item {
     width: 210px;
     height: 150px;
-    padding: 0 45px 0 60px;
+    padding: 0 45px 0 60px; 
     float: left;
     display: inline-block;
     border-left: 1px solid #dedede;
@@ -1863,7 +1882,7 @@ article {
     right: 37px;
     top: 17px;
 }
-@media screen and (max-width: 1200px){
+/* @media screen and (max-width: 1200px){
     .modo.footer .advantage {
         width: 245px;
         padding: 0;
@@ -1871,7 +1890,7 @@ article {
     .footer {
         width: 980px;
     }
-}
+} */
 
 .modo.footer .footer-item dt {
     font: 16px/20px 'Microsoft yahei';
@@ -1901,6 +1920,7 @@ article {
 @media screen and (max-width: 1200px) {
     .mod-ads {
     overflow: hidden;
+    width: 980px;
     }
     .cui_nav li a.cui_nav_has,
     .cui_nav li a.cui_nav_non {
@@ -2006,12 +2026,12 @@ article {
 
 /*@media screen and (max-width: 1200px)*/
 .ads_uma {
-    margin-left: -100px;
+    margin-left: 0;
     overflow: hidden;
 }
 .mod-ads {
     margin: 20px auto;
-    width: 980px;
+    width: 1180px;
 }
 
 .pub_side_tool {
@@ -2388,6 +2408,7 @@ article {
     padding: 129px 0 30px;
 }
 /*变短*/
+
 .pub_side_tool .stool_short_box div.stool_no_top {
     padding-top: 79px;
 }
@@ -2504,7 +2525,7 @@ article {
     position: fixed;
     width: 36px;
     height: 320px;
-    margin: 0 auto;
+    margin-left: -633px;
     z-index: 999;
     left: 50%;
     text-align: center;
@@ -2600,7 +2621,7 @@ article {
     left: 0;
     top: 40px;
     color: #666;
-    width: 978px;
+    width: 1178px;
     background-color: #fff;
     border: 1px solid #2577e3;
     border-top: none;
@@ -2673,8 +2694,8 @@ article {
 
 /* 响应式 */
 .right-ad {
-    display: none;
     float: right;
+    margin-right: 39px;
 }
 .flight .panel {
     margin-right: -40px;
@@ -2683,100 +2704,100 @@ article {
     height: 338px;
     overflow: hidden;
 }
-.car .product-item:nth-child(3), .fun .product-item:nth-child(3), .buy .product-item:nth-child(3), .guide .product-item:nth-child(3) {
+/* .car .product-item:nth-child(3), .fun .product-item:nth-child(3), .buy .product-item:nth-child(3), .guide .product-item:nth-child(3) {
     display: none;
-}
+} */
 .lift {
-    margin-left: -540px;
+     margin-left: -540px; 
 }
 .temp {
-    display: none;
+    display: block;
 }
 @media screen and (min-width:1300px){
     .lift {
         margin-left: -633px;
     }
 }
-@media screen and (min-width:1200px){
-    .section, .for-service .page-wrap, .mod_wrap, .header, .nav, .nav2, .top-bg {
-        width: 1180px;
+.hotel .product-item {
+    height: 160px;
+}
+@media screen and (max-width:1200px){
+    .section, .mod_wrap, .header, .nav, .nav2, .top-bg {
+        width: 980px;
     }
     .sale .product-item , .hotel .product-item {
-        margin: 0 10px 10px 0;
-}
-    .hotel .product-item {
-        height: 160px;
-    }
-    .hotel-abroad .item-thumbnail/*, .guide .item-thumbnail*/ {
-        height: 160px;
+        margin: 0 20px 20px 0;
     }
     .right-ad {
-        display: block;
-        margin-right: 39px;
+        display: none;
+        margin-right: 0;
     }
     .page.right {
-        margin-left: 229px;
+        margin-left: 239px;
     }
     .product-item {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .car .product-item:nth-child(3), .fun .product-item:nth-child(3), .buy .product-item:nth-child(3), .guide .product-item:nth-child(3) {
-        display: block;
+        display: none;
     }
     .for-service .page {
-        width: 384px;
+        width: 318px;
     }
     .supply-cont {
-        margin-left: 130px;
+        margin-left: 95px;
     }
     .supply-img {
-        width: 110px;
+        width: 85px;
     }
     .col-4 .supply-item {
-        width: 96px;
+        width: 106px;
     }
     .col-3 .supply-item {
-        width: 128px;
+        width: 159px;
     }
     .partner .part-bd li {
-        width: 154px;
-    }
-    .modo {
-        width: 1180px;
+        width: 120px;
     }
     .nav_a {
-        padding: 0 6px 0 6px;
+        padding-left: 4px;
     }
     .nav_li:first-child {
-        width: 42px;
+        width: 40px;
     }
     .subnav_wrap {
-        width: 1178px;
+        width: 978px;
     }
     .temp {
-        display: block;
+        display: none;
+    }
+    .modo.footer {
+        width: 980px;
+    }
+    .modo.footer .footer-item {
+        padding: 0 15px; 
+    }
+    .modo.copyright {
+        width: 980px;
     }
     .ads_uma {
-        margin-left: 0;
+        margin-left: -100px;
     }
 }
 @media screen and (min-width:1200px) and (max-width:1300px){
     .lift {
         margin-left: -633px;
         opacity: 0;
-        _filter: alpha(opacity=0);
     }
 }
 @media screen and (min-width:1100px) and (max-width:1200px){
     .lift {
         opacity: 1;
-        _filter: alpha(opacity=100);
     }
 }
 @media screen and (max-width:1100px){
     .lift {
         opacity: 0;
-        _filter: alpha(opacity=0);
     }
 }
 .modo.footer .about_ctrip {
