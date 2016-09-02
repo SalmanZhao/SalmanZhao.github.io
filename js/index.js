@@ -352,8 +352,9 @@ window.onload=function(){
     function liftLocation(){
         scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         if(scrollTop < 316){
+            var t = scrollTop;
             lift.timer = setTimeout(function(){
-                lift.style.top = 516-scrollTop + 'px';
+                lift.style.top = 516-t + 'px';
                 removeClassOfAll(liftItems,'mix_active');
                 addClass(getByClass(lift,'lift-vacations')[0],'mix_active')
             },200)
